@@ -148,7 +148,7 @@ footer {
   padding: 16px 64px;
   gap: 10px;
 
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 56px;
   bottom: 0px;
@@ -182,7 +182,7 @@ footer p {
 }
 
 /* Auto layout */
-.pop-up {
+.popup {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -192,36 +192,51 @@ footer p {
   position: absolute;
   width: 420px;
 
-  right: 64px;
-  bottom: 82px;
+  right: 0%;
+  bottom: 0%;
 
   background: #ffffff;
   box-shadow: 2px 2px 18px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+
+  transform: translateX(170px) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s ease-out;
 }
 
-.pop-up .avatar {
+.open-popup {
+  visibility: visible;
+  right: 1%;
+  bottom: 10%;
+  transform: translateX(0) scale(1);
+}
+
+.popup .avatar {
   width: 82px;
 }
-.pop-up button {
+.popup button {
   width: 20px;
   height: 20px;
   border: 0px;
   background-color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
 }
 
-.pop-up div:nth-child(1) {
+.popup div:nth-child(1) {
   display: flex;
   gap: 10px;
   margin-bottom: 6px;
   align-items: center;
 }
-.pop-up p {
+.popup p {
   line-height: 150%;
   /* or 24px */
 
   letter-spacing: 0.15px;
 }
-.pop-up div:nth-child(1) p {
+.popup div:nth-child(1) p {
   color: #9e9e9e;
 }
