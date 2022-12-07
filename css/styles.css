@@ -1,238 +1,33 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-body {
-  background-image: url(../asets/Nazca.svg);
-  width: 100%;
-  height: 100%;
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: space-between; */
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-  padding: 64px 64px 0px 64px;
-  width: 100%;
-  max-width: 1900px;
-}
-
-header a {
-  text-decoration: none;
-  text-align: end;
-  /* background-color: rgb(0, 234, 255); */
-  color: rgba(2, 58, 255, 1);
-}
-
-main {
-  height: 100%;
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
-  margin: auto;
-  width: 100%;
-  max-width: 1080px;
-  align-items: center;
-  padding: 24px 64px;
-}
-
-video {
-  border-radius: 500px;
-  z-index: -1;
-  height: 100%;
-  width: 320px;
-  height: 100%;
-}
-
-.mobil {
-  /* background-color: aquamarine; */
-  width: 100%;
-  max-width: 320px;
-  max-height: 820px;
-  /* height: 620px; */
-  justify-content: center;
-}
-
-.mobil img {
-  position: fixed;
-  z-index: 1;
-  height: 720;
-  max-width: 320px;
-}
-
-.contenido {
-  padding: 24px;
-  /* background-color: rgb(72, 144, 120); */
-  width: 100%;
-  max-width: 538px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 56px;
-  /* height: 10600px; */
-}
-
-.certificaciones {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
-  gap: 57.39px;
+  box-sizing: border-box;
   list-style: none;
-  /* background-color: red; */
-
-  width: 100%;
-  height: 100%;
 }
-
-.contenido div:nth-child(1) {
-  /* background-color: red; */
-  height: 54px;
-}
-
-.logotipo img {
-  height: 42px;
-}
-
-.certificaciones li img {
-  width: 100%;
-  height: 100%;
-}
-
-.contenido h2 {
-  /* background-color: bisque; */
-  text-align: center;
-  width: 100%;
-  max-width: 538px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 116.7%;
-  align-items: center;
-}
-
-.botones-tiendas {
-  height: 54px;
-  width: 100%;
-  max-width: 366px;
-  /* background-color: black; */
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
-}
-
-.botones-tiendas a {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  flex-direction: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 16px 4px;
-  gap: 10px;
-
-  background: #000000;
-  border-radius: 8px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.botones-tiendas h6 {
-  font-weight: 400;
-}
-.botones-tiendas h3 {
-  font-weight: 400;
-}
-
-/* FOOOTER */
-
-footer {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-  max-width: 1736px;
-
-  /* background-color: red; */
-
-  position: absolute;
-  height: 54px;
-  left: 10%;
-  right: 10%;
-  bottom: 0px;
-
-  /* margin: auto;
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
-  padding: 16px 64px;
-
-  width: 100%;
-
-  align-items: flex-end;
-
-  max-width: 1600px;
-  height: 56px;
-
-  background-color: rgb(211, 12, 12);
-  color: rgba(3, 44, 91, 0.35); */
-}
-
-footer ul {
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
-  list-style: none;
-  width: 524px;
-}
-
-footer a {
-  text-decoration: none;
-  color: rgba(3, 44, 91, 0.35);
+a {
   font-size: 14px;
+  text-decoration: none;
+  color: rgba(3, 44, 91, 0.4);
 }
 
-footer a:hover {
-  color: rgba(3, 44, 91, 0.695);
+a:hover {
+  color: rgba(3, 44, 91, 0.8);
 }
 
-footer p {
-  font-size: 14px;
-  text-align: center;
-  align-items: center;
-  min-width: 200px;
-  color: rgba(3, 44, 91, 0.35);
-}
-.social-media {
-  justify-content: space-between;
-  gap: 12px;
-  width: 15%;
-  align-items: center;
-}
-.social-media a {
-  font-size: 16px;
+.enlaces i {
+  padding: 0px 4px;
 }
 
-/* Auto layout */
 .popup {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
-  padding: 24px;
+  justify-content: center;
+  padding: 0px 20px;
   gap: 24px;
 
   position: absolute;
-  width: 420px;
+  width: 450px;
+  height: 120px;
 
   right: 0%;
   bottom: 0%;
@@ -263,14 +58,14 @@ footer p {
   background-color: #fff;
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 24px;
   cursor: pointer;
 }
 
 .popup div:nth-child(1) {
+  height: 24px;
   display: flex;
   gap: 10px;
-  margin-bottom: 6px;
   align-items: center;
 }
 .popup p {
@@ -283,90 +78,252 @@ footer p {
   color: #9e9e9e;
 }
 
-@media only screen and (max-height: 720px) {
-  footer {
-    position: inherit;
-    padding: 0 24px;
-  }
-  /* .mobil img {
-    background-color: red;
-    height: 100%;
-    width: 120px;
-  } */
-  main {
-    align-items: flex-start;
-  }
-  header {
-    top: 10px;
-    position: relativ;
-    right: 10%;
-  }
+body {
+  background-image: url(../assets/Nazca.svg);
 }
-@media only screen and (max-width: 1480px) {
-  header {
-    right: 24px;
-  }
-  footer {
-    left: 24px;
-    right: 24px;
-  }
+/* HEADER */
+.container {
+  max-width: 100%;
+  margin: auto;
 }
 
-@media only screen and (max-width: 930px) {
-  .botones-tiendas {
-    justify-content: center;
-    max-width: 20px;
-    gap: 24px;
-  }
+header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  display: none;
+  padding: 40px 40px;
+}
 
-  .botones-tiendas h6 {
-    font-size: 10px;
+header a {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: rgba(2, 58, 255, 1);
+  cursor: pointer;
+}
+header a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* FIN HEADER */
+
+/* INICIO MAIN */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+main .mobil {
+  width: 100%;
+  display: flex;
+  padding: 42px 24px;
+}
+main .mobil img {
+  width: 100%;
+  max-width: 353px;
+  margin: auto;
+}
+
+main .content {
+  width: 100%;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .content .logo {
+  height: 40px;
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+main .content .logo img {
+  height: 100%;
+}
+main .content .text {
+  font-size: 20px;
+  max-width: 360px;
+  text-align: center;
+}
+main .content .shops {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+main .content .shops .tiendas {
+  color: white;
+}
+main .content .shops .apple {
+  border-radius: 10px;
+}
+main .content .shops .android {
+  display: none;
+}
+main .content .shops .tiendas:hover {
+  color: white;
+  opacity: 70%;
+}
+
+main .content .certificados {
+  margin-top: 24px;
+
+  display: none;
+}
+main .content .certificados img {
+  width: 100%;
+
+  padding: 12px;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 24px;
+}
+
+footer .enlaces {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 24px;
+}
+
+footer .derechos {
+  display: none;
+  font-size: 14px;
+  color: rgba(3, 44, 91, 0.4);
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+footer .social-media a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 632px) {
+  footer .enlaces {
+    flex-direction: row;
   }
-  .botones-tiendas h3 {
-    font-size: 14px;
-  }
-  .certificaciones {
-    flex-grow: unset;
+  main .content .text {
+    font-size: 24px;
   }
 }
-@media only screen and (max-width: 865px) {
-  .certificaciones {
-    flex-direction: column;
-    width: 200px;
+@media screen and (min-width: 1125px) {
+  main .content .text {
+    max-width: 100%;
+    font-size: 22px;
   }
-  footer {
+  .popup {
     display: flex;
-    flex-direction: column;
-    /* flex-direction: column; */
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 32px;
-
-    /* background-color: red; */
-
-    position: inherit;
-    height: 0px;
-    margin: auto;
-    left: 0%;
-    right: 0%;
-    bottom: 0px;
   }
-  footer .links {
-    align-items: center;
+
+  main {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 56px 72px;
+  }
+  main .content {
+    justify-content: center;
+  }
+  main .mobil img {
     width: 100%;
-    gap: 24px;
-    flex-direction: column;
-    left: 24px;
-    right: 24px;
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+  }
+  main .mobil {
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+  }
+  .ingreso-footer {
+    display: none;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 40px;
+  }
+  footer .derechos {
+    display: flex;
+  }
+  footer .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  footer .enlaces {
+    margin-bottom: 0px;
+  }
+  main .content .shops {
+    gap: 42px;
+    margin-bottom: 0px;
+  }
+  main .content .shops .tiendas {
+    color: white;
+  }
+  main .content .shops .apple {
+    display: flex;
+  }
+  main .content .shops .android {
+    display: flex;
+  }
+  main .content .logo {
+    margin-top: 0;
+    height: 52px;
+  }
+  main .content .certificados {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-height: 820px) {
+  main .mobil img {
+    width: 100%;
+    max-width: 270px;
+    margin-bottom: 32px;
   }
   main {
-    flex-direction: column;
+    padding: 0px;
   }
-  .social-media {
-    width: 100%;
-    padding: 0 30%;
-  }
-  footer p {
-    width: 100%;
+}
+
+@media screen and (max-height: 700px) {
+  footer {
+    position: static;
   }
 }

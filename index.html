@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,99 +12,77 @@
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/f1ed0e430a.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="asets/Icono.svg" />
+  <!-- <link rel="stylesheet" href="css/style2.css"> -->
   <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
-  <header>
-    <a href="#">Ingresar</a>
+  <header class="container">
+    <a>Ingresar</a>
   </header>
-
   <div class="popup" id="popup">
-    <button type="button" onclick="closePopup()"><img src="asets/close izquierda.svg" alt="close"></button>
-    <img class="avatar" src="asets/Avatar.png" alt="avatar">
-    <div>
+    <button type="button" onclick="closePopup()"><img src="assets/close izquierda.svg" alt="close"></button>
+    <img class="avatar" src="assets/Avatar.png" alt="avatar">
+    <section class="poop-cont">
       <div class="name">
         <p>Guillermo</p>
-        <img src="asets/Colombia.svg" alt="bandera de colombia">
+        <img src="assets/Colombia.svg" alt="bandera de colombia">
       </div>
       <p>Muy buena alternativa para llevar el control de lo negocios y fácil de usar</p>
-    </div>
-
+    </section>
   </div>
   <main>
     <div class="mobil">
-      <!-- <img src="asets/mobil contorno.png" alt=" mobilimg"> -->
-      <video autoplay loop src="asets/pexels-anna-nekrashevich-6799742.mp4"></video>
+      <img src="assets/mobil.png" alt="">
     </div>
-    <div class="contenido">
-      <div class="logotipo"><img src="asets/LogoGeor.svg" alt="logotipo"></div>
-      <h2>Vende más y controla tu negocio en tiempo real</h2>
-      <div class="botones-tiendas">
-        <a href="https://play.google.com/">
-          <img src="asets/google_play.svg" alt="google_play">
-          <div>
-            <h6>Descarga en</h6>
-            <h3>Play Store</h3>
-          </div>
+    <div class="content">
+      <div class="logo">
+        <img src="assets/LogoGeor.svg" alt="">
+      </div>
+      <div class="text">
+        <h2>Controla tu empresa en tiempo real </h2>
+      </div>
+      <div class="shops">
+        <a href="#" class="tiendas android">
+          <img src="assets/Playstore.svg" alt="">
         </a>
-        <a href="https://play.google.com/">
-          <img src="asets/apple.svg" alt="apple_store">
-          <div>
-            <h6>Descarga en</h6>
-            <h3>App Store</h3>
-          </div>
+        <a href="#" class="tiendas apple">
+          <img src="assets/Appstore.svg" alt="">
         </a>
       </div>
-      <div>
-        <ul class="certificaciones">
-          <li><img src="asets/ISO 27001.png" alt=""></li>
-          <li><img src="asets/ISO 9001.png" alt=""></li>
-          <li><img src="asets/PSE.png" alt=""></li>
-        </ul>
+      <div class="certificados">
+        <div class="ISO1"><img src="assets/ISO 9001.png" alt=""></div>
+        <div class="ISO2"><img src="assets/ISO 27001.png" alt=""></div>
+        <div class="ISO3"><img src="assets/PSE.png" alt=""></div>
       </div>
     </div>
   </main>
-
-  <footer>
-    <ul class="links">
-      <li>
-        <a href="">Centro de ayuda</a>
-      </li>
-      <li>
-        <a href="">Acerca de Geor</a>
-      </li>
-      <li>
-        <a href="">Privacidad</a>
-      </li>
-      <li>
-        <a href="">Términos</a>
-      </li>
-    </ul>
-
-    <p>© 2022 Geor. All right reseverd.</p>
-
-    <ul class="social-media">
-      <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-      <li>
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      </li>
-      <li>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-      </li>
-      <li>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-      </li>
-      <li>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-      </li>
-    </ul>
+  <footer class="container">
+    <div class="enlaces">
+      <a href="#">Centro de ayuda </a>
+      <a href="#">Acerca de Geor </a>
+      <a href="#">Privacidad <i class="fa-solid fa-angle-up"></i></a>
+      <a href="#">Términos <i class="fa-solid fa-angle-up"></i></a>
+      <a href="#">Español <i class="fa-solid fa-angle-up"></i></a>
+      <a href="#" class="ingreso-footer">Ingresar</a>
+    </div>
+    <div class="derechos">
+      <p>© 2022 Geor. All right reseverd.</p>
+    </div>
+    <div class="social-media">
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-tiktok"></i></a>
+    </div>
   </footer>
 
-  <script src="script/app.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/app2.js"></script>
+  <script src="js/app3.js"></script>
 </body>
 
 </html>
