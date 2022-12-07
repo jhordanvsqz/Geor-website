@@ -81,6 +81,7 @@ a:hover {
 body {
   background-image: url(../assets/Nazca.svg);
 }
+
 /* HEADER */
 .container {
   max-width: 100%;
@@ -140,32 +141,39 @@ main .content {
 
 main .content .logo {
   height: 40px;
-  margin-top: 72px;
+  margin-top: 48px;
   display: flex;
   justify-content: center;
 }
+
 main .content .logo img {
   height: 100%;
 }
+
 main .content .text {
   font-size: 20px;
   max-width: 360px;
   text-align: center;
 }
+
 main .content .shops {
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
 }
+
 main .content .shops .tiendas {
   color: white;
 }
+
 main .content .shops .apple {
   border-radius: 10px;
 }
+
 main .content .shops .android {
   display: none;
 }
+
 main .content .shops .tiendas:hover {
   color: white;
   opacity: 70%;
@@ -173,9 +181,9 @@ main .content .shops .tiendas:hover {
 
 main .content .certificados {
   margin-top: 24px;
-
   display: none;
 }
+
 main .content .certificados img {
   width: 100%;
 
@@ -198,6 +206,9 @@ footer .enlaces {
   flex-direction: column;
   margin-bottom: 32px;
   gap: 24px;
+}
+.fa-solid {
+  display: none;
 }
 
 footer .derechos {
@@ -227,6 +238,10 @@ footer .social-media a {
   }
 }
 @media screen and (min-width: 1125px) {
+  .fa-solid {
+    display: inline-block;
+    margin-left: 4px;
+  }
   main .content .text {
     max-width: 100%;
     font-size: 22px;
