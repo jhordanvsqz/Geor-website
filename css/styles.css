@@ -94,12 +94,12 @@ body {
 
 header {
   width: 100%;
-  height: 56px;
+  /* height: 56px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   display: inline-block;
-  padding: 40px 40px;
+  padding: 12px 0px 0px 12px;
   gap: 42px;
 }
 
@@ -205,7 +205,7 @@ main .content {
 
 main .content .logo {
   height: 40px;
-  margin-top: 48px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -350,6 +350,10 @@ footer .social-media a {
   }
 
   header {
+    height: 56px;
+
+    padding: 24px;
+
     display: flex;
   }
   .ingreso-footer {
