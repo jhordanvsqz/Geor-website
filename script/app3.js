@@ -7,6 +7,9 @@ setTimeout(() => {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
+popup.addEventListener("drag", () => {
+  popup.classList.remove("open-popup");
+});
 
 setTimeout(() => {
   popup.classList.remove("open-popup");

@@ -300,6 +300,9 @@ footer .social-media a {
 }
 
 @media screen and (min-width: 632px) {
+  .popup {
+    opacity: 100%;
+  }
   footer .enlaces {
     flex-direction: row;
   }
@@ -315,9 +318,6 @@ footer .social-media a {
   main .content .text {
     max-width: 100%;
     font-size: 22px;
-  }
-  .popup {
-    opacity: 100%;
   }
 
   main {
