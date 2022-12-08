@@ -110,6 +110,7 @@ header a {
 .switch {
   width: 30px;
   width: 30px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
