@@ -18,7 +18,8 @@ a:hover {
 }
 
 .popup {
-  display: none;
+  opacity: 0;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -92,11 +93,66 @@ header {
   width: 100%;
   height: 56px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  display: none;
+  display: inline-block;
   padding: 40px 40px;
+  gap: 42px;
 }
+
+header a {
+  display: none;
+}
+
+.switch {
+  width: auto;
+  display: flex;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all ease-out;
+}
+.switch span {
+  font-size: 24px;
+}
+
+.switch span:hover {
+  opacity: 50%;
+}
+
+.switch .fa-moon {
+  color: rgba(3, 44, 91, 0.8);
+  display: inline-block;
+}
+.switch .fa-sun {
+  display: none;
+}
+/* .switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #023aff;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 30px;
+  transition: 0.3s ease all;
+} */
+
+.active .fa-sun {
+  color: #fff;
+  display: inline-block;
+}
+.active .fa-moon {
+  display: none;
+}
+
+/* .active::after {
+  left: unset;
+  right: 0;
+} */
 
 header a {
   font-weight: 500;
@@ -179,6 +235,20 @@ main .content .shops .tiendas:hover {
   opacity: 70%;
 }
 
+html main .mobil .mobil-2 {
+  display: none;
+}
+html main .content .shops .tiendas .p-1 {
+  display: none;
+}
+
+html main .content .shops .apple .a-2 {
+  display: none;
+}
+html main .content .logo .logo-2 {
+  display: none;
+}
+
 main .content .certificados {
   margin-top: 24px;
   display: none;
@@ -247,7 +317,7 @@ footer .social-media a {
     font-size: 22px;
   }
   .popup {
-    display: flex;
+    opacity: 100%;
   }
 
   main {
@@ -325,6 +395,9 @@ footer .social-media a {
     align-items: center;
     justify-content: center;
   }
+  header a {
+    display: inline-block;
+  }
 }
 @media screen and (max-height: 820px) {
   main .mobil img {
@@ -341,4 +414,44 @@ footer .social-media a {
   footer {
     position: static;
   }
+}
+
+body.dark {
+  background: rgba(5, 5, 15, 1);
+}
+body.dark a {
+  color: rgb(255, 255, 255);
+}
+body.dark p {
+  color: rgb(255, 255, 255);
+}
+body.dark h2 {
+  color: rgb(255, 255, 255);
+}
+body.dark main .mobil .mobil-1 {
+  display: none;
+}
+body.dark main .content .shops .tiendas .p-2 {
+  display: none;
+}
+
+body.dark main .content .shops .apple .a-1 {
+  display: none;
+}
+body.dark main .content .logo .logo-1 {
+  display: none;
+}
+
+body.dark main .mobil .mobil-2 {
+  display: inline-block;
+}
+body.dark main .content .shops .tiendas .p-1 {
+  display: inline-block;
+}
+
+body.dark main .content .shops .apple .a-2 {
+  display: inline-block;
+}
+body.dark main .content .logo .logo-2 {
+  display: inline-block;
 }

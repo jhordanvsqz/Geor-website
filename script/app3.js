@@ -11,3 +11,10 @@ function closePopup() {
 setTimeout(() => {
   popup.classList.remove("open-popup");
 }, 8000);
+
+const btnSwitch = document.getElementById("switch");
+
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  btnSwitch.classList.toggle("active");
+});
