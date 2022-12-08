@@ -39,7 +39,7 @@ a:hover {
 
   transform: translateX(170px) scale(0.1);
   visibility: hidden;
-  transition: transform 0.4s ease-out;
+  transition: all ease-out 200ms;
 }
 
 .open-popup {
@@ -56,10 +56,12 @@ a:hover {
   width: 20px;
   height: 20px;
   border: 0px;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
+  display: flex;
+  justify-content: center;
   top: 16px;
-  right: 24px;
+  right: 16px;
   cursor: pointer;
 }
 
@@ -81,6 +83,7 @@ a:hover {
 
 body {
   background-image: url(../assets/Nazca.svg);
+  transition: all ease-out 400ms;
 }
 
 /* HEADER */
@@ -105,12 +108,14 @@ header a {
 }
 
 .switch {
-  width: auto;
+  width: 30px;
+  width: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(239, 12, 12, 0);
   cursor: pointer;
-  transition: all ease-out;
 }
 .switch span {
   font-size: 24px;
@@ -126,6 +131,7 @@ header a {
 }
 .switch .fa-sun {
   display: none;
+  margin-right: 4px;
 }
 /* .switch::after {
   content: "";
@@ -179,6 +185,7 @@ main .mobil {
   width: 100%;
   display: flex;
   padding: 24px 24px;
+  transition: all ease-out 200ms;
 }
 main .mobil img {
   width: 100%;
@@ -300,9 +307,6 @@ footer .social-media a {
 }
 
 @media screen and (min-width: 632px) {
-  .popup {
-    opacity: 100%;
-  }
   footer .enlaces {
     flex-direction: row;
   }
@@ -311,6 +315,9 @@ footer .social-media a {
   }
 }
 @media screen and (min-width: 1125px) {
+  .popup {
+    opacity: 100%;
+  }
   .fa-solid {
     display: inline-block;
     margin-left: 4px;
@@ -416,8 +423,12 @@ footer .social-media a {
   }
 }
 
+body.dark .popup {
+  background-color: rgba(25, 25, 50, 1);
+}
 body.dark {
-  background: rgba(5, 5, 15, 1);
+  background-image: url(../assets/Nazca\ 3.svg);
+  background-color: rgba(5, 5, 15, 1);
 }
 body.dark a {
   color: rgb(255, 255, 255);
